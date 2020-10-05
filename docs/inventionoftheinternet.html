@@ -9,37 +9,121 @@
         .jumbotron {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2088167/pexels-photo-2088167.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
             height: 25vh;
+            width: 212vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        *{
+        .heading1{
+            text-align: center;
+        }
+        * {
             margain: 0;
             padding: 0;
             box-sizing: border-box;
-
-        }
-        body {
-            background: gray;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
+        html{
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+
+        .container{
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
         .timeline{
-            background: rosybrown;
-            max-width: 1200px;
+            width: 80%;
+            height: auto;
+            max-width: 800px;
             margin: 0 auto;
+            position: relative;
+
         }
 
-        .timeline::before{
+        .timeline ul{
+            list-style: none;
+        }
+
+        .timeline ul li{
+            padding: 20px;
+            background-color: rosybrown;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .timeline ul li:last-child{
+            margin: 0;
+        }
+
+        .timeline-content h2 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content p{
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+
+        @media only screen and (min-width: 768px){
+            .timeline::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 2px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: gray;
+
+
+            }
+            .timeline ul li{
+                width: 50%;
+                margin-bottom: 50px;
+                position: relative;
+            }
+            .timeline ul li:nth-child(odd) {
+                float: left;
+                clear: right;
+                transform: translateX(-30%);
+            }
+            .timeline ul li:nth-child(even){
+                float:right;
+                clear: left;
+                transform: translateX(30%);
+
+            }
+        }
+        .timeline ul li::after {
             content: '';
             position: absolute;
+            height: 20px;
+            width: 20px;
+            transform: translateX(-50%);
+            background-color: black;
+            background-radius: 50%;
             top: 0;
-            bottom: 0;
-            width: 6px;
-            background: white;
-            left: 50%;
+        }
+        .timeline ul li:nth-child(odd)::after{
+            transform: translate(50%,-50%);
+            right: -30px;
 
         }
+        .timeline ul li li:hover:after{
+
+        }
+
+
+
 
 
     </style>
@@ -54,7 +138,7 @@
 <!-- Adding NavBar -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="https://image.flaticon.com/icons/svg/56/56906.svg" class="image-responsive logo" alt=""></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -92,75 +176,79 @@
             <div class = "heading1">
                 <h1>THE INVENTION OF THE INTERNET</h1>
             </div>
-
         </div>
     </div>
 </div>
-<div class="timeline">
-    <div class="container left">
-    <div class="content">
-        <h1>1950s</h1>
-        <p>The internet generated 300 and 1 billion dollars in business and was responsible for the one third of US
-            economic. The seminal idea behind the internet was envisioned by a psychologist named J.C.R. Licklider,
-            a professor at MIT in 1950s. At the time, terminals would be connected to a very large server and users
-            would all access the data at the same time. His idea was that the computers would allow you to communicate
-            better and that would allow you to better connect all the computers together so they might be more useful
-            in sharing information among people. The first computers were enormously large and expensive devices that
-            were never intended to communicate.</p>
-
-    </div>
-    </div>
-
-</div>
-<div class= "container right">
-    <div class="content">
-        <h2>1966</h2>
-        <p>At MIT, a graduate student named Leonard Kleinrock begin applying Queuing Theory. It’s a great tool for
-            evaluating computer in communication systems. In 1966, Robert Taylor of (ARPA), The Advanced Research
-            Projects Agency, needed a separate terminal to log into each of several time shared computers at research
-            centers across the country. Taylor had to move from terminal to terminal to work on a different computer.
-            Taylor wanted to create a network because it was difficult to have 3 terminals to take 3 different machines
-            instead in 1 terminal he could talk to all. A creation of network which would link hetero genius computers
-            to each other through this network. This invention would save money, time, and resources and tie each time
-            shared computer to one of them in 1968. Roberts sought out the engineers to build the advanced research
-            projects agency computer network, the ARPA NET. It was going to be based on special mini computers called
-            Interface Message Processor and packet switching.</p>
-    </div>
-</div>
-<div class= "container left">
-    <div class="content">
-        <h3>1969</h3>
-        <p>AIn 1969, the first piece created for the computer network that was the 4 runner of the internet arrived at
-            UCLA. Bob Taylor was given one million dollar to build his idea and UCLA created the first code.
-        </p>
-    </div>
-</div>
-<div class= "container right">
-    <div class="content">
-        <h4>1971</h4>
-        <p>In 1971, ARPA net had 18 main frame computers that hooked into the network.
-    </div>
-</div>
-<div class= "container left">
-    <div class="content">
-        <h4>1983</h4>
-        <p>In 1983, congress President Bush Congress made it official for the internet to become a public resources for
-            everyone to use. Also, that year, ARPA became  a research defense project that only a few colleges could use,
-            because it was a difficult resource for everyone to use. Tim Berners Lee invented the World Wide Web to help
-            link websites to one another.
-        </p>
-    </div>
-</div>
-<div class= "container right">
-    <div class="content">
-        <h4>1983</h4>
-        <p>In 1993, Robert Khan, known as the father of the internet, replaced Mosaic into Netscape.
-        </p>
-    </div>
-</div>
 
 
+<div class="container">
+    <div class="timeline">
+    <ul>
+        <li>
+            <div class="timeline-content">
+                <h2>1950s</h2>
+                <p>The internet generated 300 and 1 billion dollars
+                    in business and was responsible for the one third of US
+                    economic. The seminal idea behind the internet was envisioned
+                    by a psychologist named J.C.R. Licklider, a professor at MIT
+                    in 1950s. At the time, terminals would be connected to a very
+                    large server and users would all access the data at the same
+                    time. His idea was that the computers would allow you to communicate
+                    better and that would allow you to better connect all the computers
+                    together so they might be more useful in sharing information among people.
+                    The first computers were enormously large and expensive devices that
+                    were never intended to communicate.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+            <h3>1966</h3>
+            <p>At MIT, a graduate student named Leonard Kleinrock begin applying
+                Queuing Theory. It’s a great tool for evaluating computer in
+                communication systems. In 1966, Robert Taylor of (ARPA), The Advanced Research
+                Projects Agency, needed a separate terminal to log into each of several time shared
+                computers at research centers across the country. Taylor had to move from terminal to
+                terminal to work on a different computer. Taylor wanted to create a network because it
+                was difficult to have 3 terminals to take 3 different machines instead in 1 terminal he
+                could talk to all. A creation of network which would link hetero genius computers to each
+                other through this network. This invention would save money, time, and resources and tie each
+                time shared computer to one of them in 1968. Roberts sought out the engineers to build the a
+                advanced research projects agency computer network, the ARPA NET. It was going to be based on
+                special mini computers called Interface Message Processor and packet switching.</p>
+        </div>
+        <li><div class="timeline-content">
+            <h4>1969</h4>
+            <p>AIn 1969, the first piece created for the computer network that was the 4 runner of the internet arrived at
+                UCLA. Bob Taylor was given one million dollar to build his idea and UCLA created the first code.
+            </p>
+        </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <h4>1971</h4>
+                <p>In 1971, ARPA net had 18 main frame computers that hooked into the network.
+            </div>
 
+        </li>
+        <li><div class= "timeline-content">
+                <h5>1983</h5>
+                <p>In 1983, congress President Bush Congress made it official for the internet to become a public resources for
+                    everyone to use. Also, that year, ARPA became  a research defense project that only a few colleges could use,
+                    because it was a difficult resource for everyone to use. Tim Berners Lee invented the World Wide Web to help
+                    link websites to one another.
+                </p>
+            </div>
+        </li>
+        <li>
+    <div class= "timeline-content">
+            <h4>1983</h4>
+            <p>In 1993, Robert Khan, known as the father of the internet, replaced Mosaic into Netscape.
+            </p>
+    </div>
+        </li>
+    </ul>
+    </div>
+</div>
 
 
 
