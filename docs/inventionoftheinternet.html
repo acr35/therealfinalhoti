@@ -13,10 +13,34 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .image1{
-            height: 200px;
-            width: 120px;
+        *{
+            margain: 0;
+            padding: 0;
+            box-sizing: border-box;
+
         }
+        body {
+            background: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .timeline{
+            background: rosybrown;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background: white;
+            left: 50%;
+
+        }
+
 
     </style>
 
@@ -66,25 +90,80 @@
     <div class="container-fluid">
         <div class="jumbotron">
             <div class = "heading1">
-                <h1>THE INVETNION OF THE INTERNET</h1>
+                <h1>THE INVENTION OF THE INTERNET</h1>
             </div>
 
         </div>
     </div>
 </div>
+<div class="timeline">
+    <div class="container left">
+    <div class="content">
+        <h1>1950s</h1>
+        <p>The internet generated 300 and 1 billion dollars in business and was responsible for the one third of US
+            economic. The seminal idea behind the internet was envisioned by a psychologist named J.C.R. Licklider,
+            a professor at MIT in 1950s. At the time, terminals would be connected to a very large server and users
+            would all access the data at the same time. His idea was that the computers would allow you to communicate
+            better and that would allow you to better connect all the computers together so they might be more useful
+            in sharing information among people. The first computers were enormously large and expensive devices that
+            were never intended to communicate.</p>
 
-<div class="image1">
-        <img src="https://images.pexels.com/photos/5483149/pexels-photo-5483149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="what Is The Image About?" />
-</div>
-<div class="site-text">
-    <h1 id="site title">1960s</h1>
-    <p>The internet generated 300 and 1 billion dollars in business and was responsible for the one third of US economic
-        The seminal idea behind the internet was envisioned by a psychologist named J.C.R. Licklider, a professor at MIT
-        in 1950s. At the time, terminals would be connected to a very large server and users would all access the data at
-        the same time. His idea was that the computers would allow you to communicate better and that would allow you to
-        better connect all the computers together so they might be more useful in sharing information among people.</p>
+    </div>
+    </div>
 
 </div>
+<div class= "container right">
+    <div class="content">
+        <h2>1966</h2>
+        <p>At MIT, a graduate student named Leonard Kleinrock begin applying Queuing Theory. It’s a great tool for
+            evaluating computer in communication systems. In 1966, Robert Taylor of (ARPA), The Advanced Research
+            Projects Agency, needed a separate terminal to log into each of several time shared computers at research
+            centers across the country. Taylor had to move from terminal to terminal to work on a different computer.
+            Taylor wanted to create a network because it was difficult to have 3 terminals to take 3 different machines
+            instead in 1 terminal he could talk to all. A creation of network which would link hetero genius computers
+            to each other through this network. This invention would save money, time, and resources and tie each time
+            shared computer to one of them in 1968. Roberts sought out the engineers to build the advanced research
+            projects agency computer network, the ARPA NET. It was going to be based on special mini computers called
+            Interface Message Processor and packet switching.</p>
+    </div>
+</div>
+<div class= "container left">
+    <div class="content">
+        <h3>1969</h3>
+        <p>AIn 1969, the first piece created for the computer network that was the 4 runner of the internet arrived at
+            UCLA. Bob Taylor was given one million dollar to build his idea and UCLA created the first code.
+        </p>
+    </div>
+</div>
+<div class= "container right">
+    <div class="content">
+        <h4>1971</h4>
+        <p>In 1971, ARPA net had 18 main frame computers that hooked into the network.
+    </div>
+</div>
+<div class= "container left">
+    <div class="content">
+        <h4>1983</h4>
+        <p>In 1983, congress President Bush Congress made it official for the internet to become a public resources for
+            everyone to use. Also, that year, ARPA became  a research defense project that only a few colleges could use,
+            because it was a difficult resource for everyone to use. Tim Berners Lee invented the World Wide Web to help
+            link websites to one another.
+        </p>
+    </div>
+</div>
+<div class= "container right">
+    <div class="content">
+        <h4>1983</h4>
+        <p>In 1993, Robert Khan, known as the father of the internet, replaced Mosaic into Netscape.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
 
 </body>
 </html>
