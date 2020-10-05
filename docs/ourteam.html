@@ -5,6 +5,67 @@
     <!--- Bootstrap, style.css, in-file css --->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        .jumbotron {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/593158/pexels-photo-593158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            height: 25vh;
+            width: 170vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .heading1{
+            font-size: xx-large;
+            color: slategrey ;
+            text-align: center;
+        }
+
+        .container{
+            color:slategrey;
+            text-align: center;
+            font-size: xx-large;
+
+
+        }
+
+
+        .navbar{
+            background-color: slategrey !important;
+        }
+
+        .title{
+            font-size: xx-large;
+            color: black ;
+            text-align: center;
+        }
+
+        .button {
+            height: 200px;
+            position: relative;
+            background-color: slategrey;
+            color: black;
+
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+
+
+
+
+
+
+    </style>
     <title>Our Team</title>
 </head>
 <body>
@@ -15,7 +76,6 @@
 <!-- Adding NavBar -->
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="https://image.flaticon.com/icons/svg/56/56906.svg" class="image-responsive logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,23 +106,69 @@
         </div>
     </nav>
 </div>
-<div>
-    class="container">
-    <h1>Ilayda Turkmen</h1>
-    <h2>Human Computer Interaction Major</h2>
-    <div class="image">
-        <img src="https://lh3.googleusercontent.com/QDgVCZRgkkH7WQ0iILu-wjU71mlwzcT-UZP3m-GN3fU75QMOPMWvFkOx8Fw-OrqxiIPczZ5tHoczJozLxQZgESylTJwD1AfVqIUMRnnoGwTd46SMWiNlmDTLR7NGbRoQOuQesQQgnr9hsHocR2IwEILDxzvMnWFc2JE2DtWMVcIhwhzWm-Z9XVbU_oPUXV21BLuTPSkUtGycVUhbNikuQqIsCwhbqfTcj7V2VarLztTLBsvXi2IFFGONyYNYeP1gB6zUdxOS0yUbvFvmWKiJih47Fxm9cpkOSSuR6L_Owz7_YjVYnU5B20ne61Lrxpd7B2LZUSwv2B3uco-ghJYD3N1SYqy28Gi8n68mPBP1vVUmiNo9bz4BwfywVdsauVzdx43uTIRSkVaKNBa6OlX_b3LDO31Ajn0v3ykL4qVbBgeWdpTXsMLT4zmhbeASypt4Y-zAVXOABNfZFSOWxMI-fpgKs6RA7L4tBN8nM-cHkt9-ilD9xEQBgdOlIleUGuIJDOjm_lpKGSgpkuRH-39QPHGM4ffRWRoVzmAiu4EqoTuCrsiqNaxd73OqzdEpRv00-_gxVt3eJeh5igD70dV-vTzH39LL92lRbVGuBjl4ssflGsA5pEXjHM9nHBns1Rph1zo3UVJB1KfSjIhHdCrdgjAW9HAXQ7ElSTGPsBmcDIPCE6_84cjLQSOD6DyaJKY=w1098-h1530-no?authuser=0" alt="Photograph of Me">
+<div id="MAINBODY">
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class = "heading1">
+                <h1>OUR TEAM</h1>
+            </div>
+        </div>
     </div>
-    <p>
-        Hello! My name is Ilayda Turkmen. I am a human-computer interaction major at NJIT.
-        I love painting and photography. I am enjoying my first year experience in technology.
-        A fun fact about myself is that I came to America in my freshman year of high school
-        and I’m from Istanbul, Turkey.
-    </p>
-    <a href="https://www.linkedin.com/in/ilayda-turkmen-8532831b6"> class="btn">Contact Us</a>
-
-
 </div>
+
+<section id="aboutus">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <h2 class="title">Ilayda Turkmen & Abhishek Ranpura</h2>
+            </div>
+            <p>
+                    Hello! My name is Ilayda Turkmen. I am a human-computer interaction major at NJIT. I love painting
+                    and photography. I am enjoying my first year experience in technology. A fun fact about myself is
+                    that I came to America in my freshman year of high school and I’m from Istanbul, Turkey.</p>
+                <p>
+                    My name is Abhishek Ranpura. I am currently a junior at NJIT, and I am pursuing a Business and
+                    Information Systems Degree. I am very interested in the uses of web applications and my hobbies
+                    include photography, video-gaming, learning new things, and listening to music.</p>
+
+
+
+
+
+        </div>
+
+    </div>
+</section>
+<div class="button">
+    <div class="center">
+        <a href='http://linkedin.com/in/ilayda-turkmen-8532831b6'><button>Turkmen Linkedin</button>
+        </a>
+        <a href='https://www.linkedin.com/in/abhishek-ranpura-1337991b7'><button>Ranpura Linkedin</button>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
